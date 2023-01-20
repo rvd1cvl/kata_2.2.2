@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+<div>
+  <th:block th:each="car : ${cars}">
+    <ol>
+      <li th:text="${car.model} ${car.series} ${car.owner}"></li>
+    </ol>
+  </th:block>
+</div>
+</body>
+</html>
