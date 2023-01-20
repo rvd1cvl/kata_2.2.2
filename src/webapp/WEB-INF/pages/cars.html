@@ -8,7 +8,7 @@
 <div>
   <th:block th:each="car : ${cars}">
     <ol>
-      <li th:text="${car.model} ${car.series} ${car.owner}"></li>
+      <li th:text="|${car.model} ${car.series} ${car.owner}|"></li>
     </ol>
   </th:block>
 </div>
